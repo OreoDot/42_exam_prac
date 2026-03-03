@@ -37,6 +37,7 @@ int main()
             write(1, "sugar", 5);
         else
             ft_wri(nbr);
+            write(1, "\n", 1);
         nbr++;
     }
 }
