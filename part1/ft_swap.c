@@ -1,20 +1,17 @@
 #include <stdio.h>
 
-void ft_swap (char **a, char **b)
+void	ft_swap(int *a, int *b)
 {
-    char *temp;
+    int temp;
     temp = *a;
     *a = *b;
     *b = temp;
 }
 
-int main(void)
+int main()
 {
-    char *a = "fry";
-    char *b = "boil";
-
-    printf("%s\n" "%s", a, b);
-
-    ft_swap(&a, &b);
-    printf("%s\n" "%s", a, b);
+    int c = 4;
+    int d = 9;
+    ft_swap(&c, &d);
+    printf("c:%d\n" "d:%d\n", c, d);
 }
